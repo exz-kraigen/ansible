@@ -1,0 +1,7 @@
+- hosts: all 
+  tasks:
+      - name: add UserParametr to zabbix
+        lineinfile:
+          path: /etc/zabbix/zabbix_agentd.conf 
+          regexp: '^UserParameter'
+          line: 'UserParameter=kubectl.version, kubectl version 2>/dev/null | grep Client'

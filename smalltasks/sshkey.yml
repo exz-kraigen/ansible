@@ -1,0 +1,6 @@
+- hosts: all 
+  tasks:
+      - name: Install pub ssh key 
+        authorized_key:
+          user: root
+          key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCvEATexdnpB9HCr9olSZMxdz/+6XZl0exk4CtTCieauxMNUPbL/dkWQqqmOU427+hJXXbJ49DNPng9WNZnWYcO+UkHa61NTcLKJq4Gt2dDe/NTiAN0Vcqp3POGXMCfp0xY1PiN0PaT2NrdkgwqSkM3Y8joQGqGMQau7cv9wTttjv+0GyZJdYB6Za/4NMGHIZLTwWj9BfIQRr0Ki1441rWPhS5XB7pJMfsRytuFWSF1bJ3DI7W5nuaqKwccMqKk4ZrV7qlS6hxFTi0gkVEeeqQw4LXKD2N7+La8z21ccFDY1lBfA1Q507l4mveQN0Gd4pJgc/yFlcoUpEMeycKrhUp7 pak@addpac"

@@ -1,0 +1,9 @@
+- hosts: all
+  tasks:
+      - name: edit file  
+        replace:
+          path: /etc/sysconfig/network-scripts/ifcfg-ens160
+          regexp: '(^GATEWAY).*'
+          replace: 'GATEWAY=10.199.0.2'
+          backup: yes
+         

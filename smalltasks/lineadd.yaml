@@ -1,0 +1,8 @@
+- hosts: all 
+  tasks:
+      - name: add UserParametr to zabbix
+        lineinfile:
+          line: 'UserParameter=kubectl.version, kubectl version 2>/dev/null | grep Client'
+          state: present
+          dest: /etc/zabbix/zabbix_agentd.conf 
+          backup: yes
